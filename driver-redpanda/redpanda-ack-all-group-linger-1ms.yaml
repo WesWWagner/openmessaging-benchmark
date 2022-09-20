@@ -21,7 +21,7 @@ name: Redpanda
 driverClass: io.openmessaging.benchmark.driver.redpanda.RedpandaBenchmarkDriver
 # Kafka client-specific configuration
 replicationFactor: 3
-reset: true
+reset: false
 
 topicConfig: |
 commonConfig: |

@@ -21,7 +21,7 @@ name: Redpanda
 driverClass: io.openmessaging.benchmark.driver.redpanda.RedpandaBenchmarkDriver
 # Kafka client-specific configuration
 replicationFactor: 3
-reset: true
+reset: false
 
 # Configuration (flush.messages; flush.ms) enabled only for tests that fsync every message
 topicConfig: |
