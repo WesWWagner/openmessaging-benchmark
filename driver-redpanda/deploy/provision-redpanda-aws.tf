@@ -1,11 +1,11 @@
 provider "aws" {
   region  = var.region
-  version = "~> 2.7"
+  version = "~> 4.28.0"
   profile = var.profile
 }
 
 provider "random" {
-  version = "~> 2.1"
+  version = "~> 3.4.3"
 }
 
 variable "public_key_path" {
