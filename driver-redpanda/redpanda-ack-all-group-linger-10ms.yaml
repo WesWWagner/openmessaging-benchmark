@@ -28,6 +28,8 @@ topicConfig: |
 commonConfig: |
   bootstrap.servers=localhost:9092
   request.timeout.ms=120000
+  security.protocol=SSL
+
 producerConfig: |
   acks=all
   linger.ms=10

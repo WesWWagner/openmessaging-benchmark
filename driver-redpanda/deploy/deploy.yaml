@@ -244,6 +244,12 @@
         regexp: "^  bootstrap.servers="
         line: "  bootstrap.servers={{ bootstrapServers }}"
       with_items: "{{ drivers_list.stdout_lines }}"
+    - name: Configure security.protocol
+      lineinfile:
+        dest: "{{ item }}"
+        regexp: "^  security.protocol="
+        line: "  security.protocol=SSL"
+      with_items: "{{ drivers_list.stdout_lines }}"
     - name: Configure memory
       lineinfile:
         dest: /opt/benchmark/bin/benchmark-worker

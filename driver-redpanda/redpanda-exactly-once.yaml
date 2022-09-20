@@ -28,6 +28,7 @@ topicConfig: |
 
 commonConfig: |
   bootstrap.servers=localhost:9092
+  security.protocol=SSL
 
 producerConfig: |
   enable.idempotence=true
